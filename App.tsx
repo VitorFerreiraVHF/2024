@@ -14,9 +14,9 @@ export default function App() {
     if(imc == 0 || imc == undefined)
       setResultado("Peso e Altura não informado")
     else if( imc < 18.5 )
-      setResultado("Baixo do peso");
+      setResultado("A baixo do peso");
     else if ( imc < 25.0 )
-      setResultado("Peso adequado");
+      setResultado("Seu peso e adequado");
     else if ( imc < 30.0 )
       setResultado("Sobrepeso");
     else if ( imc < 35.0 )
@@ -26,7 +26,7 @@ export default function App() {
     else  if ( imc >= 40.0 && imc != Infinity)
       setResultado("Obesidade III");
     else 
-      setResultado("Peso ou Altura não informado");
+      setResultado("Seu Peso ou Altura não informado");
 
     alert(`IMC: ${imc.toFixed(2)} kg/m² \n${resultado}`)
    }
@@ -52,7 +52,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#666699',
+    backgroundColor: '#e1e300',
     alignItems: 'center',
     justifyContent: 'center',
   },
